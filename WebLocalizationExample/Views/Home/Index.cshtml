@@ -1,0 +1,13 @@
+﻿@using Microsoft.Extensions.Localization
+@using WebLocalizationExample.Localize
+
+@inject IStringLocalizer<Resource> Localizer
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Localizer["HelloString"]</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
